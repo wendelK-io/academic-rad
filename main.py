@@ -1,7 +1,8 @@
 file = open("sample.txt","r")
 
-# reads one line of the file at a time
+# .seek() place the cursor in the desired position
+file.seek(5)
 print(file.readline())
 
-# returns a list of strings from each line of the file
-print(file.readlines())
+# Return the cursor positioon in bytes
+print(file.tell())
